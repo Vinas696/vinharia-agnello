@@ -56,4 +56,7 @@ vinharia-agnello/
 # Link do projeto publicado:
 
 - GitHub Pages: 
-- Repositório: 
+- Repositório:
+
+# Informações adicionais que eu encontrei em outras fontes:
+- coddy: https://coddy.tech/pt
