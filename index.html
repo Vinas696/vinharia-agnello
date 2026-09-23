@@ -3,45 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinharia Agnello</title>
-    <!-- Inserção de meta tags no `<head>`: -->
-    <!-- `meta keywords` -->
-    <!-- `meta description` -->
+    <link rel="stylesheet" href="src/css/style.css" /> 
+    <title>Vinheria Agnello: Vinhos e Consultoria Especializada em São Paulo</title>                         
 </head>
-<body>
-    <!-- Uso de headings (`h1` a `h6`) e parágrafos -->
-    <h1> </h1>
-    <h2> </h2>
-    <h3> </h3>
-    <h4> </h4>
-    <h5> </h5>
-    <h6> </h6>
-
-    <p> </p>
-
-    <!-- Pelo menos uma lista (`ul` ou `ol`) -->
-    <ul> </ul> 
-    <!--  OU  -->
-    <ol> </ol> 
-
-    <!-- Pelo menos uma tabela HTML -->
-    <table> </table> 
-
-    <!-- Um formulário de contato com: -->
-    <input type="text">         <!-- `input` para nome e e-mail -->
-    <label for=""></label>      <!-- Uso de `label` associado aos campos -->
+<body class="pagina">                                                              
+    <!-- links das outras páginas -->
+    <header class="cabecalho">                                                
+        <div class="container barraNavegacao">
+            <a href="index.html" class="marca">Vinheria <span>Agnello</span></a>
+            <nav aria-label="Navegação principal">
+                <ul class="menuPrincipal">
+                    <li><a href="index.html" aria-current="page">Início</a></li>
+                    <li><a href="src/pages/pag1Historia.html">História</a></li>
+                    <li><a href="src/pages/pag2Produtos.html">Produtos</a></li>
+                    <li><a href="src/pages/pag3RedesSociais.html">Redes sociais</a></li>
+                    <li><a href="src/pages/pag4Contatos.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- -------------------------------------------------------------------------------------------- -->
     
-    <button> </button>          <!-- `button` de envio -->
+    <main>
+        <!-- mini apresentação -->
+        <section class="secao">  
+            <div class="container gradeSobre">
+                <div>
+                    <div class="cabecalhoSecao">
+                        <h1>Quem nós somos?</h1>
+                        <p> A Vinheria Agnello nasceu como uma loja física em São Paulo e, ao longo de mais de 15 anos, construiu sua reputação
+                            em cima de um único princípio: vinho se recomenda com conhecimento e cuidado, não só com prateleira cheia. </p> <br>
+                        <p> Hoje somos dirigidos por Giulio e sua filha Bianca, ao lado de uma equipe que respira vinho todos os dias. </p> <br>
+                        <p> Cada vendedor da nossa loja é treinado para orientar sobre uvas, regiões, rótulos e harmonizações. É com essa mesma
+                            experiência que queremos trazer para você aqui no site! </p> 
+                    </div>
+                </div>
+                <div>
+                    <img src="src/assets/imgs/segurando-vinho.png" width="500" height="600"/>
+                </div>
+            </div>
+        </section>
+        <!-- ---------------------------------------------------------------------------------------- -->
 
-    <textarea name="" id=""></textarea>   <!-- `textarea` para mensagem -->
+        <!-- o diferecial da empresa -->
+        <section class="secao secaoAlt">
+            <div class="container gradeSobre">
+                <div>
 
+                    <div class="cabecalhoSecao">
+                        <h2>Diferenciais:</h2>
+                        <p>O mundo do vinho tem cerca de 6.000 variedades de uvas... decidir sozinho pode ser difícil. É aí que entramos!</p>
+                    </div>
 
-    <!-- >Uso de tags semânticas: `header`, `main`, `nav`, `footer`, `section`, etc. -->
-     <header> </header>
-     <main> </main>
-     <nav> </nav>
-     <footer> </footer>
-     <section> </section>
+                    <ul class="listaDiferenciais">
+                        <li>
+                            <p> Mais de <strong>15 anos</strong> de história, sempre sob gestão da mesma família!</p>
+                        </li>
 
+                        <li>
+                            <p> <strong>3 vendedores especialistas</strong>, prontos para indicar o vinho certo para cada ocasião!</p>
+                        </li>
+                        
+                        <li>
+                            <p> <strong>100% dos vinhos</strong> são armazenados sob controle de luz, temperatura e vibração!</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="src/assets/imgs/interior-fora.png" />
+                </div>
+            </div>
+        </section>
+        <!-- ---------------------------------------------------------------------------------------- -->
+
+        <!-- campo do formuláio -->
+        <section class="secao" id="cadastro">
+            <div class="container">
+
+                <div class="cabecalhoSecao">
+                    <h2>Cadastro:</h2>
+                    <p>Cadastre-se para receber novidades, novos lançamentos e promoções!</p>
+                </div>
+
+                <form class="formularioCadastro">
+                    <div class="campo">
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome completo" required />
+                    </div>
+
+                    <div class="campo">
+                        <label for="sexo">Sexo:</label>
+                        <select id="sexo" name="sexo" required>
+                            <option value="outro">Outro</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="masculino">Masculino</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="idade">Idade:</label>
+                        <input type="number" id="idade" name="idade" min="18" max="120" placeholder="Ex: 35" required />
+                    </div>
+
+                    <div class="campo">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" inputmode="numeric" required />
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required />
+                    </div>
+
+                    <button type="submit" class="botao">Cadastrar</button>
+
+                </form>
+            </div>
+        </section>
+        <!-- ---------------------------------------------------------------------------------------- -->
+  </main>
 </body>
 </html>

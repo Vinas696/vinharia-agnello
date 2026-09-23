@@ -1,1 +1,137 @@
-/* Uso de classes e ids */
+/* estilo da página */
+.pagina {
+  margin: 0;                         
+  background-color: #1b0e10;     
+  color: #f5ede4;                  
+  font-family: "Inter", sans-serif;  
+  line-height: 1.6;                  
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* estilo do cabeçalho, da página e da diferenciação */
+.cabecalho {
+  background-color: #1b0e10;
+  border-bottom: 1px solid #c9a24b;  
+  padding: 18px 0;                    
+}
+
+.barraNavegacao {
+  display: flex;                    
+  align-items: center;
+  justify-content: space-between;   
+  max-width: 1100px;               
+  margin: 0 auto;
+  padding: 0 24px;                  
+}
+
+.marca {
+  font-size: 1.5rem;
+  color: #f5ede4;
+  text-decoration: none;   
+}
+
+.menuPrincipal {
+  list-style: none;  
+  display: flex;      
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.menuPrincipal a {
+  color: #d9cdbf;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* estilo da diferenciação */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.secao {
+  padding: 80px 0;
+}
+
+.secaoAlt {
+  background-color: #2e1f1a;
+}
+
+.cabecalhoSecao {
+  max-width: 60ch;
+  margin-bottom: 32px;
+}
+
+.cabecalhoSecao h1, .cabecalhoSecao h2 {
+  color: #f5ede4;
+  margin: 0 0 12px;
+}
+
+.cabecalhoSecao p {
+  color: #d9cdbf;
+  margin: 0;
+}
+
+.gradeSobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.gradeSobre img {
+  width: 100%;
+  border: 1px solid #c9a24b;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* estilo do questionário */
+
+.formularioCadastro {
+  max-width: 640px;
+  display: grid;
+  gap: 22px;
+}
+
+.campo {
+  display: grid;
+  gap: 8px;
+}
+
+.campo label {
+  font-size: 0.9rem;
+  color: var(--cor-dourado);
+}
+
+.campo input, .campo select {
+  background-color: var(--cor-fundo);
+  border: 1px solid rgba(201, 162, 75, 0.4);
+  color: var(--cor-papel);
+  font-family: var(--fonte-corpo);
+  font-size: 1rem;
+  padding: 12px 14px;
+}
+
+.campo input::placeholder {
+  color: rgba(217, 205, 191, 0.5);
+}
+
+.formularioCadastro .botao {
+  justify-self: start;
+  border: none;
+  font-size: 1rem;
+}
+
+#sexo option {
+  background-color: #2e1f1a;
+  color: #f5ede4;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
