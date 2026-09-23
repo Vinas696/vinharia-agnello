@@ -158,3 +158,47 @@
 }
 
 /* ------------------------------------------------------------------------------------------------------------ */
+
+/* estilo do contato  */
+
+.gradeContato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+}
+
+.listaContato {
+  list-style: none;
+  margin: 0 0 32px;
+  padding: 0;
+}
+
+.listaContato li {
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(201, 162, 75, 0.2);
+}
+
+.listaContato strong {
+  display: block;
+  color: var(--cor-dourado);
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.listaContato span {
+  color: var(--cor-texto-suave);
+}
+
+.campo textarea {
+  background-color: var(--cor-fundo);
+  border: 1px solid rgba(201, 162, 75, 0.4);
+  color: var(--cor-papel);
+  font-family: var(--fonte-corpo);
+  font-size: 1rem;
+  padding: 12px 14px;
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
