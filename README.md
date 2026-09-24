@@ -36,12 +36,19 @@ vinharia-agnello/
 
 ```
 -index.html: página inicial (mini apresentação, diferenciais e cadastro);
+
 -imgs/: imagens utilizadas nas páginas;
+
 -style.css: folha de estilos utilizado em todas as páginas;
+
 -script.js: script utilizando a linguagem JavaScript (por enquanto vazio, e não sendo pedido neste projeto de Front-end);
+
 -pag1Historia.html: história da vinheria e da família Agnello;
+
 -pag2Produtos.html: catálogo de vinhos;
+
 -pag3RedesSociais.html: redes sociais;
+
 -pag4Contatos.html: formulário de contato e dúvida.    
 
 # Integrante:
@@ -51,4 +58,7 @@ vinharia-agnello/
 # Link do projeto publicado:
 
 - GitHub Pages: 
-- Repositório: 
+- Repositório:
+
+# Informações adicionais que eu encontrei em outras fontes:
+- coddy: https://coddy.tech/pt
