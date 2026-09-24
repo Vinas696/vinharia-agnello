@@ -17,11 +17,13 @@ vinharia-agnello/
 ├── README.md
 ├── src/
 │   ├── assets/
-│   │   └── imgs/                                   
+│   │   └── imgs/  
+│   │       ├── adega.png                                 
 │   │       ├── instagram-youtube.png
 │   │       ├── interior-fora.png
 │   │       ├── interior.png
 │   │       ├── segurando-vinho.png
+│   │       ├── vinhos.png
 │   ├── css/                                        
 │   │   └── style.css                               
 │   ├── js/
