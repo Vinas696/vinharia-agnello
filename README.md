@@ -57,8 +57,8 @@ vinharia-agnello/
 
 # Link do projeto publicado:
 
-- GitHub Pages: 
-- Repositório:
+- GitHub Pages: https://vinas696.github.io/vinharia-agnello/
+- Repositório: https://github.com/Vinas696/vinharia-agnello.git
 
 # Informações adicionais que eu encontrei em outras fontes:
 - coddy: https://coddy.tech/pt
