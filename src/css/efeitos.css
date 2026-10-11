@@ -1,0 +1,225 @@
+/* animação das páginas */
+
+@keyframes entradaSuave {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulsar {
+  0%, 100% {
+    color: #f5ede4;
+    text-shadow: 0 0 0 rgba(201, 162, 75, 0);
+  }
+  50% {
+    color: #c9a24b;
+    text-shadow: 0 0 10px rgba(201, 162, 75, 0.8);
+  }
+}
+
+.secao .container {
+  animation: entradaSuave 0.8s ease-out both;
+}
+
+.ultimasUnidades {
+  animation: pulsar 2s ease-in-out infinite;
+  font-weight: 600;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* pseudo-elementos */
+
+::selection {
+  background-color: #c9a24b;
+  color: #1b0e10;
+}
+
+.menuPrincipal a {
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.menuPrincipal a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #c9a24b;
+  transform: scaleX(0);            
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.menuPrincipal a:hover::after, .menuPrincipal a[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
+.cabecalhoSecao h2::before {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  margin-bottom: 12px;
+  background-color: #c9a24b;
+  transition: width 0.4s ease;
+}
+
+.cabecalhoSecao:hover h2::before {
+  width: 96px;
+}
+
+.gradeSobre .cabecalhoSecao h1 + p::first-letter {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #c9a24b;
+  float: left;
+  line-height: 1;
+  margin-right: 8px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* pseudo-classes e transições */
+
+.menuPrincipal a:not([aria-current="page"]):hover {
+  color: #c9a24b;
+}
+
+.menuPrincipal a[aria-current="page"] {
+  color: #f5ede4;
+}
+
+.marca {
+  transition: color 0.3s ease;
+}
+
+.marca:hover {
+  color: #c9a24b;
+}
+
+.campo input, .campo select, .campo textarea {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+  outline: none;
+  border-color: #c9a24b;
+  box-shadow: 0 0 0 3px rgba(201, 162, 75, 0.25);
+}
+
+button {
+  background-color: #c9a24b;
+  color: #1b0e10;
+  border: 1px solid #c9a24b;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease,
+              transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: transparent;
+  color: #c9a24b;
+  transform: scale(1.05);            /* TRANSFORMAÇÃO 2: scale */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button:focus-visible, a:focus-visible {
+  outline: 2px solid #c9a24b;
+  outline-offset: 3px;
+}
+
+.cabecalhoSecao a {
+  color: #c9a24b;
+  transition: color 0.3s ease;
+}
+
+.cabecalhoSecao a:hover {
+  color: #f5ede4;
+}
+
+.cartaoHarmonizacao {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.cartaoHarmonizacao:hover {
+  transform: translateY(-6px);       
+  border-color: #c9a24b;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
+}
+
+.gradeSobre img, .gradeContato img, .redesImagem img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gradeSobre img:hover, .gradeContato img:hover, .redesImagem img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.5);
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* pseudo-classes adicionais para a tabela em "pag2Produtos.html" */
+
+.tabelaRolagem {
+  overflow-x: auto;
+}
+
+.tabelaProdutos {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.tabelaProdutos th, .tabelaProdutos td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid rgba(201, 162, 75, 0.2);
+}
+
+.tabelaProdutos th {
+  color: #c9a24b;
+  border-bottom: 2px solid #c9a24b;
+  white-space: nowrap;
+}
+
+.tabelaProdutos tr:nth-child(even) {
+  background-color: #2e1f1a;
+}
+
+.tabelaProdutos tr {
+  transition: background-color 0.3s ease;
+}
+
+.tabelaProdutos tr:not(:first-child):hover {
+  background-color: rgba(201, 162, 75, 0.15);
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+/* acessibilidade */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
