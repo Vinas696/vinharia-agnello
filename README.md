@@ -24,7 +24,8 @@ vinharia-agnello/
 │   │       ├── interior.png
 │   │       ├── segurando-vinho.png
 │   │       ├── vinhos.png
-│   ├── css/                                        
+│   ├── css/
+│   │   ├── efeitos.css                                       
 │   │   └── style.css                               
 │   ├── js/
 │   │   └── script.js                               
@@ -39,6 +40,8 @@ vinharia-agnello/
 
 -imgs/: imagens utilizadas nas páginas;
 
+-efeitos.css: folha de estilos com efeitos visuais;
+
 -style.css: folha de estilos utilizado em todas as páginas;
 
 -script.js: script utilizando a linguagem JavaScript (por enquanto vazio, e não sendo pedido neste projeto de Front-end);
@@ -51,14 +54,19 @@ vinharia-agnello/
 
 -pag4Contatos.html: formulário de contato e dúvida.    
 
-# Integrante:
+# Integrantes:
 
 - Vinicius Pereira Sabino
+- Aline
 
 # Link do projeto publicado:
 
 - GitHub Pages: https://vinas696.github.io/vinharia-agnello/
 - Repositório: https://github.com/Vinas696/vinharia-agnello.git
+
+# Efeitos Visuais:
+
+## Pseudo-elementos:
 
 # Informações adicionais que eu encontrei em outras fontes:
 - coddy: https://coddy.tech/pt

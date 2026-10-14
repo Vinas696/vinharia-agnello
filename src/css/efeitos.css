@@ -78,7 +78,7 @@
 }
 
 .gradeSobre .cabecalhoSecao h1 + p::first-letter {
-  font-size: 2.6rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #c9a24b;
   float: left;
