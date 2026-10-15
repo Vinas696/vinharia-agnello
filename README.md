@@ -64,7 +64,7 @@ vinharia-agnello/
 - GitHub Pages: https://vinas696.github.io/vinharia-agnello/
 - Repositório: https://github.com/Vinas696/vinharia-agnello.git
 
-# Efeitos Visuais:
+# EfeitosVisuais:
 
 ## Animações:
 
