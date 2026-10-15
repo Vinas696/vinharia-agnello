@@ -57,7 +57,7 @@ vinharia-agnello/
 # Integrantes:
 
 - Vinicius Pereira Sabino
-- Aline
+- Aline da Silva Correia
 
 # Link do projeto publicado:
 
@@ -66,7 +66,26 @@ vinharia-agnello/
 
 # Efeitos Visuais:
 
+## Animações:
+
+- entradaSuave: seções surgem com fade e subida;
+- pulsar: presente em "Últimas unidades" na tabela.
+
 ## Pseudo-elementos:
+
+- ::selection: seleção de texto dourado;
+- ::after: sublinhado dourado animado no menu;
+- ::before: barra dourada decorativa nos títulos h2;
+- ::first-letter: primeira letra no primeiro parágrafo.
+
+## Pseudo-classes:
+
+- :hover: inserido em menu, logo, botões, cartões, imagens e linhas da tabela;
+- :focus: campos de formulário com borda dourada;
+- :focus-visible: contorno dourado em botões e links;
+- :active: botão diminui levemente ao clicar;
+- :not(): evita o efeito na página atual do menu e no cabeçalho da tabela;
+- :nth-child(): linhas alternadas na tabela de produtos.
 
 # Informações adicionais que eu encontrei em outras fontes:
 - coddy: https://coddy.tech/pt
